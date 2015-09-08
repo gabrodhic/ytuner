@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  
+        <PreferenceCategory 
+        android:title="@string/pref_title_general"
+        >
+	         <!-- <CheckBoxPreference
+		        android:key="pref_key_random_start"
+		        android:title="@string/pref_title_random_start"
+		        android:summary="@string/pref_summary_random_start"
+		        android:defaultValue="true" />	  
+		         -->
+		     <ListPreference		        
+		        android:key="pref_key_content_language"
+		        android:title="@string/pref_title_content_language"
+		        android:summary="@string/pref_summary_content_language"
+		        android:dialogTitle="@string/pref_title_content_language"
+		        android:entries="@array/pref_entries_content_language"
+		        android:entryValues="@array/pref_values_content_language"
+		        android:defaultValue="@string/pref_default_content_language" />   
+		        <!-- 
+		     <ListPreference		        
+		        android:key="pref_key_content_country"
+		        android:title="@string/pref_title_content_country"
+		        android:summary="@string/pref_summary_content_country"
+		        android:dialogTitle="@string/pref_title_content_country"
+		        android:entries="@array/pref_entries_content_country"
+		        android:entryValues="@array/pref_values_content_country"
+		        android:defaultValue="@string/pref_default_content_country" />
+		        -->
+		    <ListPreference		        
+		        android:key="pref_key_default_quality"
+		        android:title="@string/pref_title_default_quality"
+		        android:summary="@string/pref_summary_default_quality"
+		        android:dialogTitle="@string/pref_title_default_quality"
+		        android:entries="@array/pref_entries_default_quality"
+		        android:entryValues="@array/pref_values_default_quality"
+		        android:defaultValue="@string/pref_default_default_quality" />     
+		    <EditTextPreference 
+		    	android:key="pref_key_moderator_code"
+		    	android:title="@string/pref_title_moderator_code"
+	            android:summary="@string/pref_summary_moderator_code"
+	            android:dialogTitle="@string/pref_title_moderator_code"
+	            android:defaultValue=""/>
+	            
+    </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/pref_title_about"
+        >	        
+	        <Preference 	            
+	            android:title="@string/pref_title_contact"            
+	            android:summary="@string/pref_summary_contact" />
+	            
+	        <Preference android:title="@string/pref_title_facebook_page" 
+	       android:key="pref_key_facebook_page" />
+	        
+	        <Preference android:title="@string/pref_title_plus_page" 
+	       android:key="pref_key_plus_page" />
+	        
+	       <Preference android:title="@string/pref_title_rateus" 
+	       android:key="pref_key_rateus" />
+			    
+		 <Preference android:title="@string/pref_title_version" 
+		     android:summary=""
+	       android:key="pref_key_version" />
+	     
+    </PreferenceCategory>
+</PreferenceScreen>

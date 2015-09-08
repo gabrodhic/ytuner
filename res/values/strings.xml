@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- These keys dont need translation -->
+    <string name="pref_swipe_instruc">pref_swipe_instruc</string>
+    <string name="pref_tap_instruc">pref_tap_instruc</string>
+    <string name="pref_key_selected_channels">pref_key_selected_channels</string>
+    
+	<string name="app_name">yTuner</string>    
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+    
+	<string name="loading_video">loading...</string>
+	
+	<!-- Alert dialog -->
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please wait...</string>    
+    <string name="swipe_left">Swipe left</string>
+    
+    <!-- buttons -->
+    <string name="retry">Retry</string>
+    <string name="exit_app">Exit App</string>
+    
+    <string name="check_settings">Check Settings</string>
+    
+    <string name="wifi_desconn_warning">Warning: You are NOT connected to Wi-Fi.</string>
+    
+    <!-- This is a list of options that appears as a dialog pop-up to the user when he/she close the app to get a feeback. 
+    	 Please try not exceed 26 characters for each option.-->
+    <string name="close_app_feedback">Why do you exit?:</string>
+    <string-array name="close_app_feedback_values">
+    	<item>App is ok, just closing it</item>		
+		<item>Don\'t like the App</item>
+		<item>Don\'t like the videos</item>
+		<item>Needs more channels</item>
+		<item>App is buggy</item>
+		<item>App didn\'t load</item>			
+		<item>Don\'t understand App</item>		
+		<item>Not what I\'m looking for</item>
+		<item>I closed it by mistake</item>		
+		<item>Other</item>
+    </string-array>
+    <!-- This is an optional dialog that appears if the users wants to leave a comment. Please try NOT to exceed 26 chars -->
+    <string name="close_app_comment">Any Comment?:</string>
+    <string name="close_app_suggestion">Any suggestion?:</string>
+    <string name="close_app_videos">What videos you\'d like?:</string>
+    <string name="close_app_channel">What channels you\'d like?</string>
+    <string name="close_app_comment_send">Send / Close</string>
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="close_app_rateus">Can you rate us?</string>
+    <string name="close_app_rateus_desc">Please, please, rate us on Google Play Store!, its very important for us. By giving us your support you give us the strengh to go on; add more features, channels, videos and improve the app. Its just a second.</string>
+    <string name="thanks_bye">Thanks, Bye!</string>
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="no_internet_conn">No Internet connection</string>
+    <string name="no_internet_conn_desc">There is no internet connection. Please check your connection settings.</string>    
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="app_update_notify">Download Update?</string>
+    <string name="app_update_notify_desc">There is an update available. Please download update from Google Play Store, otherwise yTuner might not work correctly.</string>    
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="option_locked">Option Locked!</string>
+    <string name="option_locked_desc">To unlock this uption please share this app with a friend using any of your favorite apps(WhatsApp, gmail, facebook, etc)</string>
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="social_feedback">We want to hear you!</string>
+    <string name="social_feedback_desc">Do you have any comment or any YouTube channel/video that you\'d like to be on yTuner? Please write to us through Facebook, Google+ or Google Play.</string>
+    <string name="social_feedback_facebook">Facebook</string>
+    <string name="social_feedback_plus">Google+</string>
+    <string name="social_feedback_play">Google Play</string>
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="server_conn_error">Server connection error</string>
+    <string name="server_conn_error_desc">There was an error trying to connect to the server. You can retry or exit and open the app again.</string>
+    
+    <!-- Alert dialog: Title and description, try to keep similar number of characters or lower-->
+    <string name="load_video_error">Error loading video</string>
+    <string name="load_video_error_desc">There has been too many errors consecutively trying to load the videos, there might be some problem with your device. You can either retry or exit and open the app again.</string>
+	
+    <!-- Toast message -->
+    <string name="crash_toast_text">Ooooops, something went wrong! App development has been notified, please come back in few days!</string>
+	
+    
+    <!-- BEGIN PREFERENCES STRINGS -->
+
+    
+    
+    <!-- These are a list of options that appers on the configuration of the app. The typical Settings screen for each android app. -->
+	<string name="pref_title_general">General</string>
+    <string name="pref_title_random_start">Random Start</string>
+    <string name="pref_summary_random_start">Starts playing long videos at a random time</string>
+    <string name="pref_title_content_language">Language</string>
+    <string name="pref_summary_content_language">Main spoken Language of videos</string>
+    <string name="pref_default_content_language">WW</string>
+    <string-array name="pref_entries_content_language">
+    	<item>AUTOMATIC</item>		
+		<item>ENGLISH</item>		
+		<item>ESPAÑOL (SPANISH)</item>		
+    </string-array>
+    <string-array name="pref_values_content_language">
+		<item>WW</item>		
+		<item>EN</item>
+		<item>ES</item>		 
+    </string-array>
+    <!-- 
+    <string name="pref_title_content_country">Content Country</string>
+    <string name="pref_summary_content_country">Optional country of origin of videos</string>
+    <string name="pref_default_content_country">WW</string>
+     <string-array name="pref_entries_content_country">
+     	<item>ALL (WORLD)</item>
+        <item>AFGHANISTAN</item>
+		<item>ÅLAND ISLANDS</item>
+		<item>ALBANIA</item>
+		<item>ALGERIA</item>
+		<item>AMERICAN SAMOA</item>
+		<item>ANDORRA</item>
+		<item>ANGOLA</item>
+		<item>ANGUILLA</item>
+		<item>ANTARCTICA</item>
+		<item>ANTIGUA AND BARBUDA</item>
+		<item>ARGENTINA</item>
+		<item>ARMENIA</item>
+		<item>ARUBA</item>
+		<item>AUSTRALIA</item>
+		<item>AUSTRIA</item>
+		<item>AZERBAIJAN</item>
+		<item>BAHAMAS</item>
+		<item>BAHRAIN</item>
+		<item>BANGLADESH</item>
+		<item>BARBADOS</item>
+		<item>BELARUS</item>
+		<item>BELGIUM</item>
+		<item>BELIZE</item>
+		<item>BENIN</item>
+		<item>BERMUDA</item>
+		<item>BHUTAN</item>
+		<item>BOLIVIA, PLURINATIONAL STATE OF</item>
+		<item>BONAIRE, SINT EUSTATIUS AND SABA</item>
+		<item>BOSNIA AND HERZEGOVINA</item>
+		<item>BOTSWANA</item>
+		<item>BOUVET ISLAND</item>
+		<item>BRAZIL</item>
+		<item>BRITISH INDIAN OCEAN TERRITORY</item>
+		<item>BRUNEI DARUSSALAM</item>
+		<item>BULGARIA</item>
+		<item>BURKINA FASO</item>
+		<item>BURUNDI</item>
+		<item>CAMBODIA</item>
+		<item>CAMEROON</item>
+		<item>CANADA</item>
+		<item>CAPE VERDE</item>
+		<item>CAYMAN ISLANDS</item>
+		<item>CENTRAL AFRICAN REPUBLIC</item>
+		<item>CHAD</item>
+		<item>CHILE</item>
+		<item>CHINA</item>
+		<item>CHRISTMAS ISLAND</item>
+		<item>COCOS (KEELING) ISLANDS</item>
+		<item>COLOMBIA</item>
+		<item>COMOROS</item>
+		<item>CONGO</item>
+		<item>CONGO, THE DEMOCRATIC REPUBLIC OF THE</item>
+		<item>COOK ISLANDS</item>
+		<item>COSTA RICA</item>
+		<item>CÔTE D\'IVOIRE</item>
+		<item>CROATIA</item>
+		<item>CUBA</item>
+		<item>CURAÇAO</item>
+		<item>CYPRUS</item>
+		<item>CZECH REPUBLIC</item>
+		<item>DENMARK</item>
+		<item>DJIBOUTI</item>
+		<item>DOMINICA</item>
+		<item>DOMINICAN REPUBLIC</item>
+		<item>ECUADOR</item>
+		<item>EGYPT</item>
+		<item>EL SALVADOR</item>
+		<item>EQUATORIAL GUINEA</item>
+		<item>ERITREA</item>
+		<item>ESTONIA</item>
+		<item>ETHIOPIA</item>
+		<item>FALKLAND ISLANDS (MALVINAS)</item>
+		<item>FAROE ISLANDS</item>
+		<item>FIJI</item>
+		<item>FINLAND</item>
+		<item>FRANCE</item>
+		<item>FRENCH GUIANA</item>
+		<item>FRENCH POLYNESIA</item>
+		<item>FRENCH SOUTHERN TERRITORIES</item>
+		<item>GABON</item>
+		<item>GAMBIA</item>
+		<item>GEORGIA</item>
+		<item>GERMANY</item>
+		<item>GHANA</item>
+		<item>GIBRALTAR</item>
+		<item>GREECE</item>
+		<item>GREENLAND</item>
+		<item>GRENADA</item>
+		<item>GUADELOUPE</item>
+		<item>GUAM</item>
+		<item>GUATEMALA</item>
+		<item>GUERNSEY</item>
+		<item>GUINEA</item>
+		<item>GUINEA-BISSAU</item>
+		<item>GUYANA</item>
+		<item>HAITI</item>
+		<item>HEARD ISLAND AND MCDONALD ISLANDS</item>
+		<item>HOLY SEE (VATICAN CITY STATE)</item>
+		<item>HONDURAS</item>
+		<item>HONG KONG</item>
+		<item>HUNGARY</item>
+		<item>ICELAND</item>
+		<item>INDIA</item>
+		<item>INDONESIA</item>
+		<item>IRAN, ISLAMIC REPUBLIC OF</item>
+		<item>IRAQ</item>
+		<item>IRELAND</item>
+		<item>ISLE OF MAN</item>
+		<item>ISRAEL</item>
+		<item>ITALY</item>
+		<item>JAMAICA</item>
+		<item>JAPAN</item>
+		<item>JERSEY</item>
+		<item>JORDAN</item>
+		<item>KAZAKHSTAN</item>
+		<item>KENYA</item>
+		<item>KIRIBATI</item>
+		<item>KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF</item>
+		<item>KOREA, REPUBLIC OF</item>
+		<item>KUWAIT</item>
+		<item>KYRGYZSTAN</item>
+		<item>LAO PEOPLE\'S DEMOCRATIC REPUBLIC</item>
+		<item>LATVIA</item>
+		<item>LEBANON</item>
+		<item>LESOTHO</item>
+		<item>LIBERIA</item>
+		<item>LIBYA</item>
+		<item>LIECHTENSTEIN</item>
+		<item>LITHUANIA</item>
+		<item>LUXEMBOURG</item>
+		<item>MACAO</item>
+		<item>MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</item>
+		<item>MADAGASCAR</item>
+		<item>MALAWI</item>
+		<item>MALAYSIA</item>
+		<item>MALDIVES</item>
+		<item>MALI</item>
+		<item>MALTA</item>
+		<item>MARSHALL ISLANDS</item>
+		<item>MARTINIQUE</item>
+		<item>MAURITANIA</item>
+		<item>MAURITIUS</item>
+		<item>MAYOTTE</item>
+		<item>MEXICO</item>
+		<item>MICRONESIA, FEDERATED STATES OF</item>
+		<item>MOLDOVA, REPUBLIC OF</item>
+		<item>MONACO</item>
+		<item>MONGOLIA</item>
+		<item>MONTENEGRO</item>
+		<item>MONTSERRAT</item>
+		<item>MOROCCO</item>
+		<item>MOZAMBIQUE</item>
+		<item>MYANMAR</item>
+		<item>NAMIBIA</item>
+		<item>NAURU</item>
+		<item>NEPAL</item>
+		<item>NETHERLANDS</item>
+		<item>NEW CALEDONIA</item>
+		<item>NEW ZEALAND</item>
+		<item>NICARAGUA</item>
+		<item>NIGER</item>
+		<item>NIGERIA</item>
+		<item>NIUE</item>
+		<item>NORFOLK ISLAND</item>
+		<item>NORTHERN MARIANA ISLANDS</item>
+		<item>NORWAY</item>
+		<item>OMAN</item>
+		<item>PAKISTAN</item>
+		<item>PALAU</item>
+		<item>PALESTINE, STATE OF</item>
+		<item>PANAMA</item>
+		<item>PAPUA NEW GUINEA</item>
+		<item>PARAGUAY</item>
+		<item>PERU</item>
+		<item>PHILIPPINES</item>
+		<item>PITCAIRN</item>
+		<item>POLAND</item>
+		<item>PORTUGAL</item>
+		<item>PUERTO RICO</item>
+		<item>QATAR</item>
+		<item>RÉUNION</item>
+		<item>ROMANIA</item>
+		<item>RUSSIAN FEDERATION</item>
+		<item>RWANDA</item>
+		<item>SAINT BARTHÉLEMY</item>
+		<item>SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</item>
+		<item>SAINT KITTS AND NEVIS</item>
+		<item>SAINT LUCIA</item>
+		<item>SAINT MARTIN (FRENCH PART)</item>
+		<item>SAINT PIERRE AND MIQUELON</item>
+		<item>SAINT VINCENT AND THE GRENADINES</item>
+		<item>SAMOA</item>
+		<item>SAN MARINO</item>
+		<item>SAO TOME AND PRINCIPE</item>
+		<item>SAUDI ARABIA</item>
+		<item>SENEGAL</item>
+		<item>SERBIA</item>
+		<item>SEYCHELLES</item>
+		<item>SIERRA LEONE</item>
+		<item>SINGAPORE</item>
+		<item>SINT MAARTEN (DUTCH PART)</item>
+		<item>SLOVAKIA</item>
+		<item>SLOVENIA</item>
+		<item>SOLOMON ISLANDS</item>
+		<item>SOMALIA</item>
+		<item>SOUTH AFRICA</item>
+		<item>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</item>
+		<item>SOUTH SUDAN</item>
+		<item>SPAIN</item>
+		<item>SRI LANKA</item>
+		<item>SUDAN</item>
+		<item>SURINAME</item>
+		<item>SVALBARD AND JAN MAYEN</item>
+		<item>SWAZILAND</item>
+		<item>SWEDEN</item>
+		<item>SWITZERLAND</item>
+		<item>SYRIAN ARAB REPUBLIC</item>
+		<item>TAIWAN, PROVINCE OF CHINA</item>
+		<item>TAJIKISTAN</item>
+		<item>TANZANIA, UNITED REPUBLIC OF</item>
+		<item>THAILAND</item>
+		<item>TIMOR-LESTE</item>
+		<item>TOGO</item>
+		<item>TOKELAU</item>
+		<item>TONGA</item>
+		<item>TRINIDAD AND TOBAGO</item>
+		<item>TUNISIA</item>
+		<item>TURKEY</item>
+		<item>TURKMENISTAN</item>
+		<item>TURKS AND CAICOS ISLANDS</item>
+		<item>TUVALU</item>
+		<item>UGANDA</item>
+		<item>UKRAINE</item>
+		<item>UNITED ARAB EMIRATES</item>
+		<item>UNITED KINGDOM</item>
+		<item>UNITED STATES</item>
+		<item>UNITED STATES MINOR OUTLYING ISLANDS</item>
+		<item>URUGUAY</item>
+		<item>UZBEKISTAN</item>
+		<item>VANUATU</item>
+		<item>VENEZUELA, BOLIVARIAN REPUBLIC OF</item>
+		<item>VIET NAM</item>
+		<item>VIRGIN ISLANDS, BRITISH</item>
+		<item>VIRGIN ISLANDS, U.S.</item>
+		<item>WALLIS AND FUTUNA</item>
+		<item>WESTERN SAHARA</item>
+		<item>YEMEN</item>
+		<item>ZAMBIA</item>
+		<item>ZIMBABWE</item>
+
+    </string-array>
+    <string-array name="pref_values_content_country">
+       <item>WW</item>
+       <item>AF</item>
+		<item>AX</item>
+		<item>AL</item>
+		<item>DZ</item>
+		<item>AS</item>
+		<item>AD</item>
+		<item>AO</item>
+		<item>AI</item>
+		<item>AQ</item>
+		<item>AG</item>
+		<item>AR</item>
+		<item>AM</item>
+		<item>AW</item>
+		<item>AU</item>
+		<item>AT</item>
+		<item>AZ</item>
+		<item>BS</item>
+		<item>BH</item>
+		<item>BD</item>
+		<item>BB</item>
+		<item>BY</item>
+		<item>BE</item>
+		<item>BZ</item>
+		<item>BJ</item>
+		<item>BM</item>
+		<item>BT</item>
+		<item>BO</item>
+		<item>BQ</item>
+		<item>BA</item>
+		<item>BW</item>
+		<item>BV</item>
+		<item>BR</item>
+		<item>IO</item>
+		<item>BN</item>
+		<item>BG</item>
+		<item>BF</item>
+		<item>BI</item>
+		<item>KH</item>
+		<item>CM</item>
+		<item>CA</item>
+		<item>CV</item>
+		<item>KY</item>
+		<item>CF</item>
+		<item>TD</item>
+		<item>CL</item>
+		<item>CN</item>
+		<item>CX</item>
+		<item>CC</item>
+		<item>CO</item>
+		<item>KM</item>
+		<item>CG</item>
+		<item>CD</item>
+		<item>CK</item>
+		<item>CR</item>
+		<item>CI</item>
+		<item>HR</item>
+		<item>CU</item>
+		<item>CW</item>
+		<item>CY</item>
+		<item>CZ</item>
+		<item>DK</item>
+		<item>DJ</item>
+		<item>DM</item>
+		<item>DO</item>
+		<item>EC</item>
+		<item>EG</item>
+		<item>SV</item>
+		<item>GQ</item>
+		<item>ER</item>
+		<item>EE</item>
+		<item>ET</item>
+		<item>FK</item>
+		<item>FO</item>
+		<item>FJ</item>
+		<item>FI</item>
+		<item>FR</item>
+		<item>GF</item>
+		<item>PF</item>
+		<item>TF</item>
+		<item>GA</item>
+		<item>GM</item>
+		<item>GE</item>
+		<item>DE</item>
+		<item>GH</item>
+		<item>GI</item>
+		<item>GR</item>
+		<item>GL</item>
+		<item>GD</item>
+		<item>GP</item>
+		<item>GU</item>
+		<item>GT</item>
+		<item>GG</item>
+		<item>GN</item>
+		<item>GW</item>
+		<item>GY</item>
+		<item>HT</item>
+		<item>HM</item>
+		<item>VA</item>
+		<item>HN</item>
+		<item>HK</item>
+		<item>HU</item>
+		<item>IS</item>
+		<item>IN</item>
+		<item>ID</item>
+		<item>IR</item>
+		<item>IQ</item>
+		<item>IE</item>
+		<item>IM</item>
+		<item>IL</item>
+		<item>IT</item>
+		<item>JM</item>
+		<item>JP</item>
+		<item>JE</item>
+		<item>JO</item>
+		<item>KZ</item>
+		<item>KE</item>
+		<item>KI</item>
+		<item>KP</item>
+		<item>KR</item>
+		<item>KW</item>
+		<item>KG</item>
+		<item>LA</item>
+		<item>LV</item>
+		<item>LB</item>
+		<item>LS</item>
+		<item>LR</item>
+		<item>LY</item>
+		<item>LI</item>
+		<item>LT</item>
+		<item>LU</item>
+		<item>MO</item>
+		<item>MK</item>
+		<item>MG</item>
+		<item>MW</item>
+		<item>MY</item>
+		<item>MV</item>
+		<item>ML</item>
+		<item>MT</item>
+		<item>MH</item>
+		<item>MQ</item>
+		<item>MR</item>
+		<item>MU</item>
+		<item>YT</item>
+		<item>MX</item>
+		<item>FM</item>
+		<item>MD</item>
+		<item>MC</item>
+		<item>MN</item>
+		<item>ME</item>
+		<item>MS</item>
+		<item>MA</item>
+		<item>MZ</item>
+		<item>MM</item>
+		<item>NA</item>
+		<item>NR</item>
+		<item>NP</item>
+		<item>NL</item>
+		<item>NC</item>
+		<item>NZ</item>
+		<item>NI</item>
+		<item>NE</item>
+		<item>NG</item>
+		<item>NU</item>
+		<item>NF</item>
+		<item>MP</item>
+		<item>NO</item>
+		<item>OM</item>
+		<item>PK</item>
+		<item>PW</item>
+		<item>PS</item>
+		<item>PA</item>
+		<item>PG</item>
+		<item>PY</item>
+		<item>PE</item>
+		<item>PH</item>
+		<item>PN</item>
+		<item>PL</item>
+		<item>PT</item>
+		<item>PR</item>
+		<item>QA</item>
+		<item>RE</item>
+		<item>RO</item>
+		<item>RU</item>
+		<item>RW</item>
+		<item>BL</item>
+		<item>SH</item>
+		<item>KN</item>
+		<item>LC</item>
+		<item>MF</item>
+		<item>PM</item>
+		<item>VC</item>
+		<item>WS</item>
+		<item>SM</item>
+		<item>ST</item>
+		<item>SA</item>
+		<item>SN</item>
+		<item>RS</item>
+		<item>SC</item>
+		<item>SL</item>
+		<item>SG</item>
+		<item>SX</item>
+		<item>SK</item>
+		<item>SI</item>
+		<item>SB</item>
+		<item>SO</item>
+		<item>ZA</item>
+		<item>GS</item>
+		<item>SS</item>
+		<item>ES</item>
+		<item>LK</item>
+		<item>SD</item>
+		<item>SR</item>
+		<item>SJ</item>
+		<item>SZ</item>
+		<item>SE</item>
+		<item>CH</item>
+		<item>SY</item>
+		<item>TW</item>
+		<item>TJ</item>
+		<item>TZ</item>
+		<item>TH</item>
+		<item>TL</item>
+		<item>TG</item>
+		<item>TK</item>
+		<item>TO</item>
+		<item>TT</item>
+		<item>TN</item>
+		<item>TR</item>
+		<item>TM</item>
+		<item>TC</item>
+		<item>TV</item>
+		<item>UG</item>
+		<item>UA</item>
+		<item>AE</item>
+		<item>GB</item>
+		<item>US</item>
+		<item>UM</item>
+		<item>UY</item>
+		<item>UZ</item>
+		<item>VU</item>
+		<item>VE</item>
+		<item>VN</item>
+		<item>VG</item>
+		<item>VI</item>
+		<item>WF</item>
+		<item>EH</item>
+		<item>YE</item>
+		<item>ZM</item>
+		<item>ZW</item>
+    </string-array>
+     -->
+    <string name="pref_title_default_quality">Default quality</string>
+    <string name="pref_summary_default_quality">Default video quality</string>
+    <string name="pref_default_default_quality">low</string>
+    <string-array name="pref_entries_default_quality">
+     	<!-- <item>Very Low</item> -->
+     	<item>Low</item>
+        <item>Medium</item>
+        <!-- <item>Medium High</item>
+        <item>High</item>
+        <item>Very High</item> -->
+    </string-array>
+    <string-array name="pref_values_default_quality">
+       <!-- <item>verylow</item> -->
+       <item>low</item>
+       <item>medium</item>
+       <!-- <item>mediumhigh</item>
+       <item>high</item>
+       <item>veryhigh</item> -->
+    </string-array>
+    
+    <string name="pref_title_moderator_code">Moderator Code</string>
+    <string name="pref_summary_moderator_code">Enter your moderator code</string>
+    
+    <string name="pref_title_about">About</string>
+    <string name="pref_title_contact">Contact Us</string>
+    <string name="pref_summary_contact">Give us your comments, suggestions or any question</string>
+    <string name="pref_title_facebook_page">Facebook FanPage</string>
+    <string name="pref_title_plus_page">Google Plus FanPage</string>
+    <string name="pref_title_rateus">Rate us on Google Play</string>
+    
+    <string name="pref_title_version">Version</string>
+    <!-- END PREFERENCES STRINGS -->
+    
+    
+     <!-- Event Google Analytics-->
+    <string name="event_videoCategory">Videos</string>
+    <string name="event_videoGoNext">Go Next</string>
+    <string name="event_videoChangeNext">Change Next</string>
+    <string name="event_videoChangePrevious">Change Previous</string>
+    <string name="event_videoPlay">Play</string>
+    <string name="event_videoPause">Pause</string>
+    <string name="event_videoSeekBar">Update Seekbar</string>
+    <string name="event_videoWatching">Watching Video</string>
+    <string name="event_configCategory">Configuration</string>
+    <string name="event_configChannelGuide">Show Channel Guide</string>
+    <string name="event_configSettings">Show Settings</string>
+    <string name="event_configShowMenu">Show Menu</string>
+    <string name="event_configHideMenu">Hide Menu</string>
+    <string name="event_socialCategory">Social</string>
+    <string name="event_socialShareVideo">Share Video</string>
+    <string name="event_socialShareUnlockCancel">Share Unlock App Cancel</string>
+    <string name="event_socialShareUnlockOk">Share Unlock App Ok</string>
+    <string name="event_socialFeedbackFacebook">Social Feedback Facebook</string>
+    <string name="event_socialFeedbackPlus">Social Feedback Plus</string>
+    <string name="event_socialFeedbackPlay">Social Feedback Play</string>
+
+    <!-- Event Google Analytics-->
+
+    
+</resources>

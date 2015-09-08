@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+ <!-- Note this has nothing to do do with App's actual active session, this is the timeout for when the app goes inactive(onStop, onPause, etc) 
+ https://developers.google.com/analytics/devguides/collection/android/v4/sessions
+ This is important since we use other activities on the app: ChannelGuideActivity, SettingsActivity, etc
+ Set it to 7 minutes, anyway we are using evetns every 5 min on video playback to keep session alive
+ --> 
+ <integer name="ga_sessionTimeout">420</integer>
+        
+<!--Replace placeholder ID with your tracking ID-->
+  <string name="ga_trackingId">UA-48097455-2</string>
+
+  <!--Enable automatic activity tracking-->
+  <bool name="ga_autoActivityTracking">true</bool>
+
+  <!--Enable automatic exception tracking-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+  
+  <!-- TEMPORAL TEST: dispatch data every 5 secs https://developers.google.com/analytics/devguides/collection/android/v3/dispatch -->
+  <integer name="ga_dispatchPeriod">30</integer>
+</resources>

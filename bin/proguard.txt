@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:56
+-keep class com.protogab.ytuner.ChannelGuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.protogab.ytuner.CloseFeedbackActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:29
+-keep class com.protogab.ytuner.CustomVideoView { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.protogab.ytuner.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.protogab.ytuner.MyApplication { <init>(...); }
+
+# view res/layout/controls_layer.xml #generated:100
+-keep class com.protogab.ytuner.OutlineTextView { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.protogab.ytuner.SettingsActivity { <init>(...); }
+

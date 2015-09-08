@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:fitsSystemWindows="true" 
+    android:background="@android:color/black">
+    
+ 
+	       <TextView
+          android:id="@+id/txv_loading"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:text="CHANNAME 3.5"
+          android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+
+      <TextView
+          android:id="@+id/video_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:text="TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE "
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/video_description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/video_title"
+          android:layout_centerHorizontal="true"
+          android:gravity="center_horizontal"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+  
+</RelativeLayout>

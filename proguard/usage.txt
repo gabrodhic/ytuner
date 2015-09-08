@@ -1,0 +1,75 @@
+com.protogab.ytuner.AppRater
+com.protogab.ytuner.AppRater$1
+com.protogab.ytuner.AppRater$2
+com.protogab.ytuner.AppRater$3
+com.protogab.ytuner.BuildConfig
+com.protogab.ytuner.CompatibleBackground
+com.protogab.ytuner.DeveloperKey
+com.protogab.ytuner.MainActivity:
+    public static final java.lang.String DBG_TAG
+    static final java.lang.String HISTORY_FILE_NAME
+    public static final int CHANNEL_MODE_CAT
+    public static final int CHANNEL_MODE_SUBCAT
+    public static final int CHANNEL_MODE_CHANN
+    android.graphics.drawable.Drawable back_logo
+    android.widget.PopupWindow splashLayerPW
+    android.widget.ImageView relatedIV
+    android.widget.ImageView searchIV
+    android.widget.ImageView scanIV
+    android.widget.ImageView helpIV
+    java.io.FileOutputStream vidsHistoryoutputStream
+    private static java.util.regex.Pattern myPattern
+    private int mSeekWhenPrepared
+    private boolean mStartWhenPrepared
+    private int mSurfaceHeight
+    public android.view.SurfaceHolder mSurfaceHolder
+    public int mVideoHeight
+    public int mVideoWidth
+    protected int type
+    1655:1674:private void hideStatusBar2()
+    1679:1714:private void showStatusBar2()
+    1718:1738:private com.protogab.ytuner.util.YTubeVideoItem GetUrlRes(int)
+    1971:2001:int getVideoStartingTime(java.lang.String)
+    2317:2329:int findNextUnwatchedVideo()
+com.protogab.ytuner.MainActivity$YTunerPlayer:
+    2731:2731:public boolean isScanMode()
+com.protogab.ytuner.MyApplication:
+    private static final java.lang.String PROPERTY_ID
+com.protogab.ytuner.OnSwipeTouchListener$GestureListener:
+    private static final int SWIPE_THRESHOLD
+    private static final int SWIPE_VELOCITY_THRESHOLD
+com.protogab.ytuner.R
+com.protogab.ytuner.R$array
+com.protogab.ytuner.R$attr
+com.protogab.ytuner.R$bool
+com.protogab.ytuner.R$color
+com.protogab.ytuner.R$drawable
+com.protogab.ytuner.R$id
+com.protogab.ytuner.R$integer
+com.protogab.ytuner.R$layout
+com.protogab.ytuner.R$string
+com.protogab.ytuner.R$style
+com.protogab.ytuner.R$styleable
+com.protogab.ytuner.R$xml
+com.protogab.ytuner.util.TunerDataProvider:
+    public static final java.lang.String RANDOM_CHANNEL
+    230:340:private com.protogab.ytuner.util.YTunerVideoItem getCategoryNextVideoItem(com.protogab.ytuner.util.YTunerVideoItem,java.util.ArrayList)
+    346:416:private com.protogab.ytuner.util.YTunerVideoItem getSubCategoryNextVideoItem(com.protogab.ytuner.util.YTunerVideoItem,java.util.ArrayList)
+    423:472:private com.protogab.ytuner.util.YTunerVideoItem getCategoryPreviousVideoItem(com.protogab.ytuner.util.YTunerVideoItem,java.util.ArrayList)
+    918:918:void getRelatedVideos()
+    925:929:java.lang.String getRandomWord(java.util.List)
+    936:947:public static int nthIndexOf(java.lang.String,char,int)
+com.protogab.ytuner.util.YTubeVideoItem:
+    57:64:private java.lang.String formatSize(int,int)
+    69:86:private java.lang.String formatSizeBinary(long)
+    91:95:public java.lang.String DescribeVedio()
+com.protogab.ytuner.util.YTubeVideoLib:
+    41:43:public YTubeVideoLib()
+    407:452:java.lang.Long getsize(java.lang.String)
+    457:480:java.lang.Long[] getsize(java.lang.String[])
+com.protogab.ytuner.util.YTunerListingObject$Category:
+    final synthetic com.protogab.ytuner.util.YTunerListingObject this$0
+    23:23:public YTunerListingObject$Category(com.protogab.ytuner.util.YTunerListingObject)
+com.protogab.ytuner.util.YTunerListingObject$Channel:
+    final synthetic com.protogab.ytuner.util.YTunerListingObject this$0
+    35:35:public YTunerListingObject$Channel(com.protogab.ytuner.util.YTunerListingObject)

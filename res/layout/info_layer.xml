@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+ 
+    <TableLayout 
+  android:id="@+id/tableLayout1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:stretchColumns="0,1">
+
+    <TableRow
+      android:id="@+id/tableRow1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="sdfsdfd" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_column="1"
+            android:text="sdfsdfd" >
+
+        </TextView>
+
+    </TableRow>
+        <TableRow
+      android:id="@+id/tableRow1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="sdfsdfd" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_column="1"
+            android:text="sdfsdfd" >
+
+        </TextView>
+
+    </TableRow>
+
+</TableLayout> 
+ 
+</RelativeLayout>

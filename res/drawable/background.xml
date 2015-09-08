@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_logo" 
+    android:src="@drawable/holder"    
+    android:scaleType="fitCenter"
+    android:gravity="center" />
+
+<!--
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/logo_ytuner1" />
+    <item android:drawable="@drawable/logo_ytuner2" />
+</transition> 
+ -->
+<!--
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/background2"
+    android:scaleGravity="center_vertical|center_horizontal"
+    android:scaleHeight="80%"
+    android:scaleWidth="80%" />
+  
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#FFFF0000"
+        android:endColor="#80FF00FF"
+        android:angle="45"/>
+    <padding android:left="7dp"
+        android:top="7dp"
+        android:right="7dp"
+        android:bottom="7dp" />
+    <corners android:radius="8dp" />
+</shape>
+
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back_logo" 
+    android:src="@drawable/logo_ytuner"
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+    
+    android:scaleType="fitCenter"
+    android:gravity="center" />
+    
+-->

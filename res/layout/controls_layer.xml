@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:fitsSystemWindows="true" >
+
+    <!-- http://stackoverflow.com/questions/11285961/how-to-make-a-background-transparent-20-in-android -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8C000000"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <!-- http://stackoverflow.com/questions/1666736/android-textview-automatically-truncate-and-replace-last-3-char-of-string -->
+
+        <TextView
+            android:id="@+id/current_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/img_statusbar_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:src="@drawable/icon_statusbar_up" />
+
+        <ImageView
+            android:id="@+id/img_share_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:src="@drawable/share_icon" />
+       
+ 		<ImageView
+            android:id="@+id/img_info_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/info_icon" />
+ 		        
+        <ImageView
+            android:id="@+id/img_config_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/config_icon" />
+
+        <ImageView
+            android:id="@+id/img_menu_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:src="@drawable/menu_icon" />
+        
+         <!-- 
+        <ImageView
+            android:id="@+id/img_search_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/img_related_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/related_icon" />
+
+
+
+        <ImageView
+            android:id="@+id/img_scan_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/scan_icon" />
+
+        <ImageView
+            android:id="@+id/img_help_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/help_icon" />
+ -->
+    </LinearLayout>
+
+    <com.protogab.ytuner.OutlineTextView        
+        android:id="@+id/txv_chan_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        
+        android:shadowColor="#ff333333"
+    android:shadowRadius="3.0"
+        />
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#8C000000"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+        
+        
+        
+        
+         <ImageView
+	        android:id="@+id/image_play_pause"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"	  
+	        android:layout_weight="10"      
+	        android:src="@drawable/pause" />
+
+        <TextView
+            android:id="@+id/txv_video_currenttime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/videoSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="56"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/txv_video_endtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/image_previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:src="@drawable/previous" />
+
+        <ImageView
+            android:id="@+id/image_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

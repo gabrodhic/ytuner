@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.protogab.ytuner"
+    android:versionCode="19"
+    android:versionName="1.3.7" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+	<uses-permission android:name="android.permission.DUMP"></uses-permission>
+	
+	<!-- Used for Google Play Store Campaign Measurement: https://developers.google.com/analytics/devguides/collection/android/v4/campaigns-->
+	<service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+	<receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:exported="true">
+	  <intent-filter>
+	    <action android:name="com.android.vending.INSTALL_REFERRER" />
+	  </intent-filter>
+	</receiver>
+	
+
+    <application    	
+        android:allowBackup="true"
+        android:icon="@drawable/icon_ytuner"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.protogab.ytuner.MyApplication">
+       
+       <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+           
+       <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/app_tracker" />
+
+       <activity
+            android:name="com.protogab.ytuner.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape" 
+            android:label="@string/app_name"
+            android:theme="@style/BlackNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity        
+	        android:name=".SettingsActivity"
+	        android:screenOrientation="sensorLandscape"
+	        android:configChanges="orientation|keyboardHidden"
+	        android:theme="@style/BlackNoTitleBarTheme">      
+    	</activity>
+    	
+    	<activity        
+	        android:name=".ChannelGuideActivity"
+	        android:screenOrientation="sensorLandscape"
+	        android:configChanges="orientation|keyboardHidden"
+	        android:theme="@style/BlackNoTitleBarTheme">      
+    	</activity>    	    
+    	
+    	<activity        
+	        android:name=".CloseFeedbackActivity"
+	        android:screenOrientation="sensorPortrait"
+	        android:configChanges="orientation|keyboardHidden"
+	        android:theme="@style/BlackNoTitleBarTheme">      
+    	</activity>
+       <!--
+        <activity
+            android:name="com.protogab.ytuner.PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+      <activity
+        android:label="@string/playerview_demo_name"
+        android:name=".PlayerViewDemoActivity"
+        android:screenOrientation="nosensor"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+    -->
+        
+    </application>
+
+</manifest>
